@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,9 +12,14 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
+  margin: 10px;
+}
+
+.box {
   background-color: steelblue;
   color: #fff;
   display: flex;
@@ -25,13 +30,12 @@ h1 {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-  transform: translateX(200%);
+  transform: translateX(400%);
   transition: transform 0.4s ease;
 }
 
 .box:nth-of-type(even) {
-  transform: translateX(-200px);
-  transition: transform 0.4s ease;
+  transform: translateX(-400%);
 }
 
 .box.show {
